@@ -13,13 +13,14 @@ import {CardModule} from '../../AngularMaterial/card';
 import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
 import {GridModule} from '../../AngularMaterial/grid';
 import { BuscadorComponent } from './components/buscador/buscador.component';
+import {PaginatorModule} from '../../AngularMaterial/paginator';
 
 @NgModule({
   declarations: [
     HomeComponent, FooterComponent, NavbarComponent, TarjetaComponent, BuscadorComponent
   ],
   imports: [
-    CommonModule, HomeRoutingModule,
+    CommonModule, HomeRoutingModule,PaginatorModule,
     CargaModule, CardModule, GridModule
   ]
 })

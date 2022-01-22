@@ -3,8 +3,16 @@
 
 <mat-progress-bar *ngIf="loading"
     mode="indeterminate"></mat-progress-bar>
-
 <br>
+
 <app-tarjeta [characters]="character" ></app-tarjeta>
+
+
+<div class="centrar">
+    <mat-paginator [length]="length"
+        (page)="handlePageEvent($event)"
+        [pageSize]="20" >
+    </mat-paginator>
+</div>
 
 <app-footer></app-footer>
