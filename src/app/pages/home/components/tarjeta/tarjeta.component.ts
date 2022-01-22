@@ -1,7 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import {Character} from '../../../interfaces/character';
-
+import {Character} from '../../../../interfaces/character';
 
 @Component({
   selector: 'app-tarjeta',
@@ -22,5 +21,4 @@ export class TarjetaComponent implements OnInit {
   ngOnInit(): void {
     
   }
-
 }

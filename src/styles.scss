@@ -1,4 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root{
+    --bg-body: rgb(0,0,0);
+    --color-title: rgb(109, 109, 109);
+    --color-subtitle: rgb(172, 172, 172);
+}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    
+}
