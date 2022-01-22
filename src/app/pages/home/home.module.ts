@@ -7,13 +7,19 @@ import { HomeComponent } from './home.component';
 import {FooterComponent} from '../../shared/footer/footer.component';
 import {NavbarComponent} from '../../shared/navbar/navbar.component';
 
+
+import {CargaModule} from '../../AngularMaterial/carga'
+import {CardModule} from '../../AngularMaterial/card';
+import { TarjetaComponent } from './components/tarjeta.component';
+
+
 @NgModule({
   declarations: [
-    HomeComponent, FooterComponent, NavbarComponent
+    HomeComponent, FooterComponent, NavbarComponent, TarjetaComponent
   ],
   imports: [
-    CommonModule,
-    HomeRoutingModule
+    CommonModule, HomeRoutingModule,
+    CargaModule, CardModule
   ]
 })
 export class HomeModule { }
