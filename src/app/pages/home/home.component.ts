@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Character } from 'src/app/interfaces/character';
 import { ApiService } from 'src/app/services/api.service';
-import {Response} from '../../interfaces/response';
 
 
 @Component({
@@ -11,7 +10,7 @@ import {Response} from '../../interfaces/response';
 })
 export class HomeComponent implements OnInit {
 
-  character = null;
+  character: Character [] = [];
 
   loading:boolean = true;
 
@@ -24,8 +23,7 @@ export class HomeComponent implements OnInit {
   }
 
   getCharacter(){
-    this.apiService.getCharacter(1).subscribe((resp: any)=>{
-      console.log("rr: ", resp);
+    this.apiService.getCharacter(1).subscribe( (resp : any ) =>{
       this.character = resp.results;
       this.loading = false;
     }, err => {

@@ -10,9 +10,10 @@ import {Character} from '../../../interfaces/character';
 })
 export class TarjetaComponent implements OnInit {
 
-  @Input() characters = null;
+  @Input() characters : Character [] ;
 
   constructor() { 
+    this.characters = [];
     setTimeout(() => {
       console.log("chaaracter: ", this.characters);
     }, 2000);

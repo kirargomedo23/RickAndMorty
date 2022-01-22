@@ -12,10 +12,11 @@ import {CargaModule} from '../../AngularMaterial/carga'
 import {CardModule} from '../../AngularMaterial/card';
 import { TarjetaComponent } from './components/tarjeta.component';
 import {GridModule} from '../../AngularMaterial/grid';
+import { BuscadorComponent } from './components/buscador/buscador.component';
 
 @NgModule({
   declarations: [
-    HomeComponent, FooterComponent, NavbarComponent, TarjetaComponent
+    HomeComponent, FooterComponent, NavbarComponent, TarjetaComponent, BuscadorComponent
   ],
   imports: [
     CommonModule, HomeRoutingModule,
