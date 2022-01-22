@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+import {Character} from '../../../interfaces/character';
+
 
 @Component({
   selector: 'app-tarjeta',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TarjetaComponent implements OnInit {
 
-  constructor() { }
+  @Input() characters = null;
+
+  constructor() { 
+    setTimeout(() => {
+      console.log("chaaracter: ", this.characters);
+    }, 2000);
+  }
 
   ngOnInit(): void {
+    
   }
 
 }

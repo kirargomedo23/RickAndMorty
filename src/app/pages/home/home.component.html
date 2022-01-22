@@ -1,7 +1,10 @@
 
 <app-navbar></app-navbar>
 
+<mat-progress-bar *ngIf="loading"
+    mode="indeterminate"></mat-progress-bar>
 
-
+<br>
+<app-tarjeta [characters]="character" ></app-tarjeta>
 
 <app-footer></app-footer>

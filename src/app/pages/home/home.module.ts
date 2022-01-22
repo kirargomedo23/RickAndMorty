@@ -11,7 +11,7 @@ import {NavbarComponent} from '../../shared/navbar/navbar.component';
 import {CargaModule} from '../../AngularMaterial/carga'
 import {CardModule} from '../../AngularMaterial/card';
 import { TarjetaComponent } from './components/tarjeta.component';
-
+import {GridModule} from '../../AngularMaterial/grid';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { TarjetaComponent } from './components/tarjeta.component';
   ],
   imports: [
     CommonModule, HomeRoutingModule,
-    CargaModule, CardModule
+    CargaModule, CardModule, GridModule
   ]
 })
 export class HomeModule { }
