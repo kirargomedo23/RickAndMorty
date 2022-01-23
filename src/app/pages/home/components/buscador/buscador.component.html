@@ -1,7 +1,7 @@
 
 
-<input type="text" class="centrar design-input"
-    placeholder="Buscar..."
+<input type="text" class="centrar design-input" #character
+    placeholder="Buscar..." (change)="this.search(character.value)"
     name="buscador" id="buscador">
 
 
