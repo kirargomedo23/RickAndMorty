@@ -14,6 +14,8 @@ import { TarjetaComponent } from './components/tarjeta/tarjeta.component';
 import {GridModule} from '../../AngularMaterial/grid';
 import { BuscadorComponent } from './components/buscador/buscador.component';
 import {PaginatorModule} from '../../AngularMaterial/paginator';
+import {SnackBarModule} from '../../AngularMaterial/snackbar';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {PaginatorModule} from '../../AngularMaterial/paginator';
   ],
   imports: [
     CommonModule, HomeRoutingModule,PaginatorModule,
-    CargaModule, CardModule, GridModule
+    CargaModule, CardModule, GridModule,
+    SnackBarModule,
+    
   ]
 })
 export class HomeModule { }

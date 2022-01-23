@@ -10,6 +10,7 @@ export class BuscadorComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

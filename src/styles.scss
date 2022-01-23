@@ -1,9 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root{
-    --bg-body-primary: rgb(0,0,0);
+    --bg-body-primary: rgb(231, 231, 231);
     --color-title-primary: rgb(109, 109, 109);
     --color-subtitle-primary: rgb(172, 172, 172);
+    --color-footer-primary: rgb(0,0,0);
+    --color-nabvar-primary: rgb(0,0,0);
+
 }
 
 html, body { height: 100%; }
@@ -17,3 +20,12 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.bg-footer{
+    background-color: var(--color-footer-primary);
+}
+
+.bg-nabvar{
+    background-color: var(--color-nabvar-primary);
+}
+

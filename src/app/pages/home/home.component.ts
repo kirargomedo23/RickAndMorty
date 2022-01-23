@@ -41,7 +41,6 @@ export class HomeComponent implements OnInit {
       this.info = resp.info;
       this.character = resp.results;
       this.loading = false;
-      this.calculatePages();
     }, err => {
 
     });
@@ -52,9 +51,7 @@ export class HomeComponent implements OnInit {
     this.getCharacter();
   }
 
-  calculatePages(){
-    this.length = parseInt((this.info.count / 20).toString());
-  }
+  
 
 
 }

@@ -5,14 +5,19 @@
     mode="indeterminate"></mat-progress-bar>
 <br>
 
+<div class="centrar">
+    <app-buscador></app-buscador>
+</div>
+
 <app-tarjeta [characters]="character" ></app-tarjeta>
 
 
 <div class="centrar">
-    <mat-paginator [length]="length"
+    <mat-paginator [length]="info.count"
         (page)="handlePageEvent($event)"
         [pageSize]="20" >
     </mat-paginator>
 </div>
+<br>
 
 <app-footer></app-footer>
