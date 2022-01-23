@@ -1,9 +1,8 @@
 
 
-
-
-<ng-container *ngFor="let character of characters">
-    <div class="design-card " >
+<ng-container *ngIf="characters.length>0; else nodata" >
+  <ng-container *ngFor="let character of characters">
+    <div class="design-card "  >
       <mat-card class="width-max ">
         <mat-card-header>
           <div mat-card-avatar ></div>
@@ -13,7 +12,17 @@
         <img mat-card-image [src]="character.image" >
       </mat-card>
     </div>
+  </ng-container>
 </ng-container>
+
+<ng-template #nodata>
+  <br><br>
+  <div style="text-align:center; font-size: 1rem;">
+    <p>No hay datos para mostrar.</p>
+  </div>
+</ng-template>
+
+
 
 
 

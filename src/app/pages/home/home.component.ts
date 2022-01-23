@@ -67,7 +67,7 @@ export class HomeComponent implements OnInit {
       if(result){
         return c;
       }else{
-        return [];
+        return null;
       }
     } );
 

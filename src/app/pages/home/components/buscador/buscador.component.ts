@@ -25,7 +25,7 @@ export class BuscadorComponent implements OnInit, OnDestroy {
 
   search(value: string){
     const fromEvent$ = fromEvent(document, 'change');
-    this.idSubscription = fromEvent$.pipe(debounceTime(500)).subscribe(() => {
+    this.idSubscription = fromEvent$.pipe(debounceTime(300)).subscribe(() => {
       this.observableActionService.searchCharacter(value);
     })
   }
